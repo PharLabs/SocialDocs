@@ -9,12 +9,18 @@
 "use strict";
 
 import React                           from 'react';
-import {Router, Route, browserHistory} from 'react-router';
-import HomeComponent                   from '../components/HomeComponent';
+import { Router, Route, hashHistory }  from 'react-router';
+import HomeComponent                   from '../components/app/HomeComponent';
+import NotFoundComponent               from '../components/NotFoundComponent';
 
-
+/**
+ * Routes config
+ *
+ * @author Ben Bieler <benjaminbieler2014@gmail.com>
+ */
 export default  (
-    <Router history={browserHistory}>
-        <Route component={HomeComponent} path="/" />
+    <Router history={hashHistory}>
+        <Route path="/" component={HomeComponent}/>
+        <Route path="*" component={NotFoundComponent}/>
     </Router>
 );

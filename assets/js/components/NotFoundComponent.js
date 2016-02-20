@@ -11,12 +11,14 @@
 import React from 'react';
 
 /**
+ * Triggered when 404
+ *
  * @author Ben Bieler <benjaminbieler2014@gmail.com>
  */
-export default class HomeComponent extends React.Component {
+export default class NotFoundComponent extends React.Component {
     render() {
         return (
-            <h1>Home</h1>
+            <h1>404 Not Found</h1>
         );
     }
 }
