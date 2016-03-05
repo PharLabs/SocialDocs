@@ -23,13 +23,12 @@
     "production": "NODE_ENV=production webpack webpack-dev-server",
     "debug": "node debug app.js",
     "start": "node app.js",
-    "test": "",
-    "bugs": "https://github.com/SocialDocs/SocialDocs/issues/new"
+    "test": ""
   },
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bbieler/lorem.git"
+    "url": "git://github.com/SocialDocs/SocialDocs.git"
   },
   "author": "benbieler",
   "license": "",
