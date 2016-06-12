@@ -17,7 +17,7 @@
  *		Good news is, that means you can specify configuration for your local
  *		machine in this file without inadvertently committing personal information
  *		(like database passwords) to the repo.  Plus, this prevents other members
- *		of your team from commiting their local configuration changes on top of yours.
+ *		of your team from committing their local configuration changes on top of yours.
  *
  *    In a production environment, you probably want to leave this file out
  *    entirely and leave all your settings in env/production.js

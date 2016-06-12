@@ -61,7 +61,7 @@ module.exports = function notFound (data, options) {
   // but fall back to sending JSON(P) if any errors occur.
   else return res.view('404', { data: data }, function (err, html) {
 
-    // If a view error occured, fall back to JSON(P).
+    // If a view error occurred, fall back to JSON(P).
     if (err) {
       //
       // Additionally:
@@ -71,7 +71,7 @@ module.exports = function notFound (data, options) {
       }
       // Otherwise, if this was a more serious error, log to the console with the details.
       else {
-        sails.log.warn('res.notFound() :: When attempting to render error page view, an error occured (sending JSON instead).  Details: ', err);
+        sails.log.warn('res.notFound() :: When attempting to render error page view, an error occurred (sending JSON instead).  Details: ', err);
       }
       return res.jsonx(data);
     }
